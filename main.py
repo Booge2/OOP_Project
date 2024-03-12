@@ -1,11 +1,10 @@
-class Dogs:
-    def __init__(self, name, age, breed):
+class Student:
+    def __init__(self, name, age):
         self.name = name
         self.age = age
-        self.breed = breed
 
+    def print_info(self):
+        print(f"Ім'я - {self.name} та вік - {self.age}")
 
-my_dog = Dogs("Барс", 7, "Дворняга")
-print(my_dog.name)
-print(my_dog.age)
-print(my_dog.breed)
+student1 = Student("Влад", 22)
+student1.print_info()
